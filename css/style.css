@@ -1,6 +1,92 @@
 
 /*
-  Name:
-  Course and Section:
-  Instructor Name:
+  Name:Julian Burnley
+  Course and Section:CIS233DA # 12988
+  Instructor Name:Brian Thurber
 */ 
+
+/*  color scheme info */
+:root {
+  --light-left-body-background-color: #cce6ff;
+  --background-card-xlight-color: 	#e2edf1;
+  --medium-dark-code-color: #86592d;
+  --left-border-link-color: #0084ff;
+  --left-column-background-text-shadow-color: #031f3b;
+  --span-code-medium-color:#003300;
+}
+
+/* fonts*/
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('RobotoSlab-VariableFont_wght.ttf') format('truetype');
+  
+  font-variation-settings: normal;
+}
+/* Resets sizing method and removes browser defaults for all elements */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* body*/
+
+body {
+  background-color: var(--light-left-body-background-color);
+  color: var(--left-column-background-text-shadow-color);
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  row-gap: 1em;
+  font-family: 'Roboto Slab', serif, 'Courier Prime', monospace;
+  overflow: hidden;
+
+}
+.left-column {
+align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+height: 100%;
+flex-shrink: 0;
+flex-grow: 0;
+flex-basis: 250px;
+ background-color: var(--left-column-background-text-shadow-color);
+ color: var(--light-left-body-background-color);
+ border-right: thick var(--left-border-link-color);
+ box-shadow: 0 8px 6px -6px var(--left-column-background-text-shadow-color);
+ padding: 1em;
+}
+
+h1 {
+ font-size: 1.3rem; 
+}
+
+nav{
+  font-size: 1em;
+}
+
+nav a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--medium-dark-code-color);
+  padding: .5em;
+}
+
+a:hover {
+  padding-top: 0.6em;
+ background-color: var(--medium-dark-code-color);
+ color: var(--left-column-background-text-shadow-color);
+  text-decoration: none;
+}
+
+.footer {
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
