@@ -16,8 +16,8 @@
         <h1>Flexbox Cheatsheet</h1>
         <nav>
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/flexbox-cheatsheet.html">Flexbox Cheatsheet</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a></li>
                 <li><a href="https://github.com/rsc-cis233da-in-v8/12988_lesson-3-practice-activities-JUL2216252">Lesson 3</a></li>
               </ul>
             </nav>
@@ -58,6 +58,141 @@
            
 
             <h2>Properties</h2>
+
+            <section class="container">
+                <div>
+                    <h3>Flex Container Properties</h3>
+                    <dl>
+                        <div class="property-group">
+                        <dt>flex</dt>
+                        <dd>flex-grow; /*a number that determines how much a flex item grows.*/
+                                flex-shrink; /*a number that determines how much the flex item shrinks.*/
+                                flex-basis; /*the length of the flex item, as auto, inherit, as px, %, or em units.*/
+                        </dd>
+                            </div>
+
+                            <div class="property-group">
+                        <dt>flex-direction</dt>
+                        <dd>row;<span> /*displays items horizontally.*/</span>
+                                row-reverse;<span> /*opposite of row.*/</span>
+                                column;<span> /*displays items vertically.*/</span>
+                                column-reverse;<span>/*opposite of column.*/</span>
+                                initial;<span> /*the default property value.*/</span>
+                                inherit; <span>/*the same properties of the parent item.*/</span>
+                        </dd>
+                         </div>
+
+                         <div class="property-group">
+                        <dt>flex-wrap</dt>
+                        <dd>nowrap;<span>/*flex item will not wrap.*/</span>
+                                wrap; <span>/*flex items wrap if necessary.*/</span>
+                                wrap-reverse; <span>/*items wrap in reverse order.*/</span>
+                                initial;<span>/*default value.*/</span>
+                                inherit; <span>/*item has the same values as the parent items.*/</span>
+                        </dd>
+                       </div>
+
+                       <div class="property-group">
+                        <dt>display</dt>
+                        <dd>block;<span>/*flex items are displayed as a block.*/</span>
+                                inline;<span> /*flex items are displayed inline.*/</span>
+                                grid; <span>/*flex items are displayed as a grid.*/</span>
+                        </dd>
+                       </div>
+
+                       <div class="property-group">
+                        <dt>justify-content</dt>
+                        <dd>flex-start;<span>/*items are aligned at the beginning of the container.*/</span>
+                                flex-end;<span> /*items are aligned at the end of the container.*/</span>
+                                center; <span>/*items are aligned at the center of the container.*/</span>
+                                space-between; <span>/*items are aligned with max space between them.*/</span>
+                               
+                        </dd>
+                       </div>
+                        <dt>row-gap</dt>
+                        <dd>length;<span>/*row gap with any length value or percentage.*/</span>
+                                 normal;<span>/*the default row gap of 1em.*/</span> 
+                                 initial;<span>/*the default value.*/</span> 
+                                 inherit;<span> /*the same value of the parent items.*/</span> 
+
+                        </dd>
+                        <div class="property-group">
+                        <dt>column-gap</dt>
+                        <dd>length; <span> /*column gap with any length value or percentage.*/</span> 
+                                 normal;<span>  /*the default column gap of 1em.*/</span> 
+                                 initial; <span> /*the default value.*/</span> 
+                                 inherit; <span> /*the same value of the parent items.*/</span> 
+                        </dd>
+                    </div>
+                    </dl>
+                    
+                    
+                </div>
+
+                <div>
+                    <h3>Flex Item Properties</h3>
+                    <dl>
+                        <div class="Flex Item Properties">
+                        <dt>order</dt>
+                        <dd>number; /*specifies the order with a default value of 0.*/
+                                initial; /*sets the order to 0*/
+                                inherit; /*the same order value as the parent item.*/
+                        </dd>
+                    </div>
+
+                    <div class="Flex Item Properties">
+                        <dt>flex-grow</dt>
+                        <dd>number; /*specifies how much the item will grow.*/
+                                initial; /*the default value.*/
+                                inherit; /*the same order value as the parent item.*/
+
+                        </dd>
+                    </div>
+
+                    <div class="Flex Item Properties">
+                        <dt>flex-shrink</dt>
+                        <dd>number; /*specifies how much the item will grow.*/
+                                 initial; /*the default value.*/
+                                 inherit; /*the same order value as the parent item.*/
+
+
+                        </dd>
+                    </div>
+
+                    <div class="Flex Item Properties">
+                        <dt>flex-basis</dt>
+                        <dd>number; /*specifies the order with a default value of 0.*/
+                                 initial; /*the default value.*/
+                                 inherit; /*the same order value as the parent item.*/
+
+
+                        </dd>
+                    </div>
+
+                    <div class="Flex Item Properties">
+                        <dt>align-self</dt>
+                        <dd>center; /* Put the item around the center */
+                                start; /* Put the item at the start */
+                                end; /* Put the item at the end */
+                                stretch; /* Stretch 'auto'-sized items to fit the container */
+                        </dd>
+                    </div>
+
+                    <div class="Flex Item Properties">
+                        <dt>flex</dt>
+                        <dd>flex-grow; /*a number that determines how much a flex item grows.*/
+                                flex-shrink; /*a number that determines how much the flex item shrinks.*/
+                                flex-basis; /*the length of the flex item, as auto, inherit, as px, %, or em units.*/
+
+
+                        </dd>
+                    </div>
+                    </dl>
+                    
+
+                </div>
+
+            </section>
           
 
     </section>
