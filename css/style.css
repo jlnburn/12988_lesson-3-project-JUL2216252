@@ -76,6 +76,7 @@ body {
 .left-column nav {
   display: flex;
   flex-direction: column;
+  gap: 0.35em;
 }
 
 .left-column nav ul {
@@ -87,6 +88,7 @@ body {
   text-decoration: none;
   padding: 0.5em;
   display: block;
+  border-radius: 0.35em;
 }
 
 .left-column nav a:hover,
@@ -94,6 +96,11 @@ body {
 .left-column nav a[aria-current="page"] {
   background-color: var(--color-medium);
   color: var(--color-dark);
+}
+
+.left-column nav a:focus-visible {
+  outline: 2px solid var(--color-sidebar-text);
+  outline-offset: 2px;
 }
 
 .theme-toggle {
