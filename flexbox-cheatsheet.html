@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lesson 3 Project</title>
+    <title>Lesson 3 Project | Flexbox Cheatsheet</title>
     <meta charset="UTF-8">
     <meta name="author" content="Julian Burnley">
-    <meta name="description" content="Cheatsheet page">
-    <meta name="keywords" content="cheatsheet, flexbox properties, flex containers, flex items, ">
+    <meta name="description" content="Cheatsheet for CSS Flexbox properties">
+    <meta name="keywords" content="cheatsheet, flexbox properties, flex containers, flex items">
     <link href="css/style.css" rel="stylesheet">
-    <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-    </style>
+    <script src="js/theme.js" defer></script>
   </head>
-
-  
   <body>
-<main>
     <section class="left-column">
-       
-        <h1>Flexbox Cheatsheet</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a></li>
-                <li><a href="https://github.com/rsc-cis233da-in-v8/12988_lesson-3-practice-activities-JUL2216252">Lesson 3</a></li>
-              </ul>
-            </nav>
-       
-            <h2>Terminology</h2>
-            
-            <dl>
-                <div class="term-group">
+        <div>
+          <p class="course-label">Web Development Coursework</p>
+          <p class="lesson-heading">Lesson 3 Project</p>
+          <h1>Flexbox Cheatsheet</h1>
+        </div>
+        <nav aria-label="Primary navigation">
+            <a href="index.html">Web Development Coursework</a>
+            <a href="flexbox-cheatsheet.html" aria-current="page">Flexbox Cheatsheet</a>
+            <a href="../12988_lesson-3-practice-activities-JUL2216252/index.html">Practice Activities</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        <footer>
+            <span>Developed by: Julian Burnley (@jlnburn)</span>
+            <span>Lesson 3</span>
+            <small>July 25, 2026</small>
+        </footer>
+    </section>
+    <main>
+        <h2>Terminology</h2>
+        <dl>
+            <div class="term-group">
                 <dt>Flex Container</dt>
                 <dd>A flex container is space preserved for use after creating a flexbox.</dd>
             </div>
@@ -45,147 +45,135 @@
             </div>
             <div class="term-group">
                 <dt>Main axis</dt>
-                <dd>The main axis can be described as the left to right or x-axis of the flex container.
-            </dd>
-        </div>
-        <div class="term-group">
+                <dd>The main axis can be described as the left to right or x axis of the flex container.</dd>
+            </div>
+            <div class="term-group">
                 <dt>Main size properties</dt>
-                <dd>Size could refer to the height, width,  or number of characters of elements or inputs.</dd>
+                <dd>Size could refer to the height, width, or number of characters of elements or inputs.</dd>
             </div>
             <div class="term-group">
                 <dt>Cross axis</dt>
-                <dd>The cross axis is similar to the y-axis of a grid running down to up of a flex container. </dd>
+                <dd>The cross axis is similar to the y axis of a grid running down to up of a flex container.</dd>
             </div>
             <div class="term-group">
                 <dt>Cross size properties</dt>
                 <dd>The length of the items on the cross axis.</dd>
             </div>
-              </dl>
-           
-            
-            <h2>Properties</h2>
+        </dl>
 
-            <section class="container">
-                <div>
-                    <h3>Flex Container Properties</h3>
-                    <dl>
-                        <div class="property-group">
-                        <dt>flex</dt>
-                        <dd>flex-grow; /*a number that determines how much a flex item grows.*/
-                             </dd>
-                            </div>
-
-                            <div class="property-group">
-                        <dt>flex-direction</dt>
-                        <dd>row;<span> /*displays items horizontally.*/</span>
-                                row-reverse;<span> /*opposite of row.*/</span>
-                        </dd>
-                    </div>
-
+        <h2>Properties</h2>
+        <section class="container">
+            <div>
+                <h3>Flex Container Properties</h3>
+                <dl>
                     <div class="property-group">
-                   <dt>flex-wrap</dt>
-                   <dd>nowrap;<span>/*flex item will not wrap.*/</span>
-                           wrap; <span>/*flex items wrap if necessary.*/</span>
-                           wrap-reverse; <span>/*items wrap in reverse order.*/</span>
+                        <dt><code>display</code></dt>
+                        <dd>
+                            <code>flex; <span>/* creates a block-level flex container */</span></code>
+                            <code>inline-flex; <span>/* creates an inline-level flex container */</span></code>
                         </dd>
-                    </div>  
+                    </div>
                     <div class="property-group">
-                        <dt>display</dt>
-                        <dd>block;<span>/*flex items are displayed as a block.*/</span>
-                                inline;<span> /*flex items are displayed inline.*/</span>
-                                 </dd>
-                       </div>
-                   <div class="property-group">
-                        <dt>justify-content</dt>
-                        <dd>flex-start;<span>/*items are aligned at the beginning of the container.*/</span>
-                                flex-end;<span> /*items are aligned at the end of the container.*/</span>
-                               </dd>
-                       </div>
-                       <dt>flex</dt>
-                    <dd>length;<span>/*row gap with any length value or percentage.*/</span>
-                                 normal;<span>/*the default row gap of 1em.*/</span> 
-                                 initial;<span>/*the default value.*/</span> 
-                                  </dd>
-                        <div class="property-group">
-                        <dt>column-gap</dt>
-                        <dd>length; <span> /*column gap with any length value or percentage.*/</span> 
-                                 normal;<span>  /*the default column gap of 1em.*/</span> 
-                                </dd>    
-                            </div>
-                       
-                      </div>
-                    <div>
-                        <h3>Flex Item Properties</h3>
-                        <dl>
-                            <div class="Flex Item Properties">
-                            <dt>order</dt>
-                            <dd>number; /*specifies the order with a default value of 0.*/
-                                    initial; /*sets the order to 0*/
-                                    inherit; /*the same order value as the parent item.*/
-                            </dd>
-                        </div>
-                
-                        <div class="Flex Item Properties">
-                            <dt>flex-grow</dt>
-                            <dd>number; /*specifies how much the item will grow.*/
-                                    initial; /*the default value.*/
-                                </dd>
-                        </div>
-    
-                        <div class="Flex Item Properties">
-                            <dt>flex-shrink</dt>
-                            <dd>number; /*specifies how much the item will grow.*/
-                                     initial; /*the default value.*/
-                                     inherit; /*the same order value as the parent item.*/
-    
-                            </dd>
-                        </div>
-    
-                        <div class="Flex Item Properties">
-                            <dt>flex-basis</dt>
-                            <dd>number; /*specifies the order with a default value of 0.*/
-                                     initial; /*the default value.*/
-                                    
-    
-                            </dd>
-                        </div>
-    
-                       
-                    <div class="Flex Item Properties">
-                        <dt>align-self</dt>
-                        <dd>center; /* Put the item around the center */
-                                start; /* Put the item at the start */
-                               
-                                
+                        <dt><code>flex-direction</code></dt>
+                        <dd>
+                            <code>row; <span>/* displays items horizontally */</span></code>
+                            <code>row-reverse; <span>/* opposite of row */</span></code>
+                            <code>column; <span>/* displays items vertically */</span></code>
+                            <code>column-reverse; <span>/* displays a vertical row in reverse */</span></code>
                         </dd>
                     </div>
-        
-                    <div class="Flex Item Properties">
-                        <dt>flex</dt>
-                        <dd>flex-grow; /*a number that determines how much a flex item grows.*/
-                                flex-shrink; /*a number that determines how much the flex item shrinks.*/
-                         
-
+                    <div class="property-group">
+                        <dt><code>flex-wrap</code></dt>
+                        <dd>
+                            <code>nowrap; <span>/* flex item will not wrap */</span></code>
+                            <code>wrap; <span>/* flex items wrap if necessary */</span></code>
+                            <code>wrap-reverse; <span>/* items wrap in reverse order */</span></code>
                         </dd>
                     </div>
+                    <div class="property-group">
+                        <dt><code>flex-flow</code></dt>
+                        <dd>
+                            <code>row nowrap; <span>/* combines direction and wrapping in one declaration */</span></code>
+                            <code>column wrap; <span>/* creates wrapping vertical columns */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt><code>justify-content</code></dt>
+                        <dd>
+                            <code>flex-start; <span>/* items are aligned at the beginning of the container */</span></code>
+                            <code>flex-end; <span>/* items are aligned at the end of the container */</span></code>
+                            <code>center; <span>/* centers items on the main axis */</span></code>
+                            <code>space-between; <span>/* puts equal space between items */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt><code>align-items</code></dt>
+                        <dd>
+                            <code>stretch; <span>/* stretches items across the cross axis */</span></code>
+                            <code>center; <span>/* centers items on the cross axis */</span></code>
+                            <code>flex-start; <span>/* aligns items to the cross start */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt><code>align-content</code></dt>
+                        <dd>
+                            <code>stretch; <span>/* stretches wrapped lines across available space */</span></code>
+                            <code>space-between; <span>/* distributes space between wrapped lines */</span></code>
+                            <code>center; <span>/* centers wrapped lines on the cross axis */</span></code>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
 
+            <div>
+                <h3>Flex Item Properties</h3>
+                <dl>
+                    <div class="property-group">
+                        <dt><code>order</code></dt>
+                        <dd>
+                            <code>number; <span>/* specifies the order with a default value of 0 */</span></code>
+                            <code>initial; <span>/* sets the order to 0 */</span></code>
+                            <code>inherit; <span>/* the same order value as the parent item */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt><code>flex-grow</code></dt>
+                        <dd>
+                            <code>number; <span>/* specifies how much the item will grow */</span></code>
+                            <code>initial; <span>/* the default value */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt><code>flex-shrink</code></dt>
+                        <dd>
+                            <code>number; <span>/* specifies how much the item will shrink */</span></code>
+                            <code>initial; <span>/* the default value */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt><code>flex-basis</code></dt>
+                        <dd>
+                            <code>auto; <span>/* uses the item's width or height as its initial size */</span></code>
+                            <code>12rem; <span>/* starts the item at a specific size */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt><code>align-self</code></dt>
+                        <dd>
+                            <code>center; <span>/* Put the item around the center */</span></code>
+                            <code>flex-start; <span>/* Put the item at the start */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt><code>flex</code></dt>
+                        <dd>
+                            <code>1 1 auto; <span>/* lets an item grow and shrink from its automatic size */</span></code>
+                            <code>0 0 12rem; <span>/* keeps an item at a fixed flex basis */</span></code>
+                        </dd>
+                    </div>
                 </dl>
             </div>
         </section>
-    </section>
-    <div class="footer">
-    <footer>
-        <p><span>Developed by:</span> Julian Burnley </p><p>JUL2216252</p><p><span>Lesson 3</span> </p>
-        <p><small>March 19, 2022</small></p>
-      </footer>
-    </div>
-</main>
+    </main>
   </body>
 </html>
-
-
-          
-
-  
-
- <!------Making a change to see if I can, trigger a commit-->

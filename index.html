@@ -1,42 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Lesson 3 Project</title>
+    <title>Lesson 3 Project | Reflection</title>
     <meta charset="UTF-8">
     <meta name="author" content="Julian Burnley">
-    <meta name="description" content="Home page">
-    <meta name="keywords" content="cheatsheet, flexbox properties">
+    <meta name="description" content="A reflection on the flexbox concepts covered in CIS233DA Lesson 3">
+    <meta name="keywords" content="CSS, flexbox, reflection, responsive design">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/theme.js" defer></script>
   </head>
-
-  
   <body>
-<main>
     <section class="left-column">
+      <div>
+        <p class="course-label">Web Development Coursework</p>
+        <p class="lesson-heading">Lesson 3 Project</p>
         <h1>Lesson Reflections</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a></li>
-                <li><a href="https://github.com/rsc-cis233da-in-v8/12988_lesson-3-practice-activities-JUL2216252">Lesson 3</a></li>
-              </ul>
-            </nav>
-
-            <h2>My Learning</h2>
-            <p>In this lesson most of the concepts, I had come across before, but never had to incorporate into web design. Flexboxes, sections and aside elements. All three seem provide flexibility and compatibility across platforms, which is getting more important as mobile devices continue to dominate the market. </p>
-
-            <h2>My Next Steps</h2>
-            <p>I was unable to get the content reflow to work. I am not sure if it was the divs or my media queries that went wrong. I intend to attempt the project again to try and figure out what went wrong.</p>
-
-    </section>
-    <footer>
-        <p><span>Developed by:</span> Julian Burnley </p><p>JUL2216252</p><p><span>Lesson 3</span> </p>
-        <p><small>March 19, 2022</small></p>
+      </div>
+      <nav aria-label="Primary navigation">
+        <a href="index.html" aria-current="page">Web Development Coursework</a>
+        <a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a>
+        <a href="../12988_lesson-3-practice-activities-JUL2216252/index.html">Practice Activities</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+      <footer>
+        <span>Developed by: Julian Burnley (@jlnburn)</span>
+        <span>Lesson 3</span>
+        <small>July 25, 2026</small>
       </footer>
-      
-</main>
+    </section>
+    <main>
+      <h2>My Learning</h2>
+      <p>Three ideas were especially useful in this lesson. First, a flex container controls its children along a main axis and a cross axis, which makes layouts easier to reason about. Second, properties such as <code>justify-content</code>, <code>align-items</code>, and <code>gap</code> can replace fragile spacing techniques. Third, wrapping and flexible basis values allow components to reflow when the viewport narrows or the page is highly zoomed. I can use these techniques for navigation, card collections, dashboards, and accessible responsive layouts.</p>
+
+      <h2>My Next Steps</h2>
+      <p>I want to explore how flex growth, shrinkage, and basis interact when several items compete for limited space. I will learn more by building layouts with different content lengths, testing them at multiple viewport widths and zoom levels, and comparing the results in browser developer tools.</p>
+    </main>
   </body>
 </html>
-
- <!------Making a change to see if I can trigger a commit-->
-
