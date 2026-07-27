@@ -12,7 +12,7 @@
   --color-medium: #86c5ff;
   --color-dark: #10222c;
   --color-code-text: #86592d;
-  --color-code-comment: #149014;
+  --color-code-comment: #0b6b2b;
   --color-shadow: rgba(16, 34, 44, 0.35);
   --color-sidebar-bg: #10222c;
   --color-sidebar-text: #e2edf1;
@@ -128,6 +128,15 @@ body {
   justify-content: space-around;
 }
 
+.left-column footer a {
+  color: var(--color-medium);
+}
+
+.left-column footer a:focus-visible {
+  outline: 2px solid var(--color-sidebar-text);
+  outline-offset: 2px;
+}
+
 main {
   height: 100vh;
   width: 100%;
@@ -178,8 +187,17 @@ dd code {
   color: var(--color-code-text);
 }
 
-dd span {
+main > p code {
+  color: var(--color-code-text);
+  font-family: var(--font-code);
+}
+
+dd code span {
   color: var(--color-code-comment);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
 }
 
 :root[data-theme="dark"] {
